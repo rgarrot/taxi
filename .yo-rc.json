@@ -1,0 +1,7 @@
+{
+  "generator-phaser": {
+    "projectName": "taxi",
+    "esVersion": 6,
+    "gameFolder": "game"
+  }
+}
