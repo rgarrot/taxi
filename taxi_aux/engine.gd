@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends KinematicBody2D
 
 var rotation = 0
 var speed_rotation = 0.02
