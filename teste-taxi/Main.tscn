@@ -1,0 +1,325 @@
+[gd_scene load_steps=16 format=1]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/num_0.png" type="Texture" id=3]
+[ext_resource path="res://assets/num_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/num_2.png" type="Texture" id=5]
+[ext_resource path="res://assets/num_3.png" type="Texture" id=6]
+[ext_resource path="res://assets/num_4.png" type="Texture" id=7]
+[ext_resource path="res://assets/num_5.png" type="Texture" id=8]
+[ext_resource path="res://assets/num_6.png" type="Texture" id=9]
+[ext_resource path="res://assets/num_7.png" type="Texture" id=10]
+[ext_resource path="res://assets/num_8.png" type="Texture" id=11]
+[ext_resource path="res://assets/num_9.png" type="Texture" id=12]
+[ext_resource path="res://taxi.tscn" type="PackedScene" id=13]
+[ext_resource path="res://passenger.tscn" type="PackedScene" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 35.3973, 32.9361 )
+
+[node name="Main" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="TileMap" parent="." instance=ExtResource( 2 )]
+
+editor/display_folded = true
+
+[node name="num0" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 284.22, 158.248 )
+texture = ExtResource( 3 )
+
+[node name="num0" type="StaticBody2D" parent="TileMap/num0"]
+
+transform/pos = Vector2( 1.29881, 2.25368 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1.04858, -1.2988, -0.560699 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num0/num0"]
+
+transform/pos = Vector2( -1.2988, -0.560699 )
+transform/scale = Vector2( 1, 1.04858 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num1" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 359.22, 286.248 )
+texture = ExtResource( 4 )
+
+[node name="num1" type="StaticBody2D" parent="TileMap/num1"]
+
+transform/pos = Vector2( -0.701187, 0.253681 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1.08027, -0.298801, 0.300543 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num1/num1"]
+
+transform/pos = Vector2( -0.298801, 0.300543 )
+transform/scale = Vector2( 1, 1.08027 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num2" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 413.455, 160.969 )
+texture = ExtResource( 5 )
+
+[node name="num2" type="StaticBody2D" parent="TileMap/num2"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.02906, -25.4112, -117.34 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num2/num2"]
+
+transform/pos = Vector2( -25.4112, -117.34 )
+transform/scale = Vector2( 1.02408, 1.02906 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num3" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 546.455, 160.969 )
+texture = ExtResource( 6 )
+
+[node name="num3" type="StaticBody2D" parent="TileMap/num3"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.02906, -28.4112, -117.34 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num3/num3"]
+
+transform/pos = Vector2( -28.4112, -117.34 )
+transform/scale = Vector2( 1.02408, 1.02906 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num4" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 707.455, 160.969 )
+texture = ExtResource( 7 )
+
+[node name="num4" type="StaticBody2D" parent="TileMap/num4"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.05067, -26.4112, -117.093 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num4/num4"]
+
+transform/pos = Vector2( -26.4112, -117.093 )
+transform/scale = Vector2( 1.02408, 1.05067 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num5" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 643.455, 287.969 )
+texture = ExtResource( 8 )
+
+[node name="num5" type="StaticBody2D" parent="TileMap/num5"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.05067, -26.4113, -117.093 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num5/num5"]
+
+transform/pos = Vector2( -26.4113, -117.093 )
+transform/scale = Vector2( 1.02408, 1.05067 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num6" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 543.455, 416.969 )
+texture = ExtResource( 9 )
+
+[node name="num6" type="StaticBody2D" parent="TileMap/num6"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.05067, -26.4112, -117.093 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num6/num6"]
+
+transform/pos = Vector2( -26.4112, -117.093 )
+transform/scale = Vector2( 1.02408, 1.05067 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num7" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 414.455, 416.969 )
+texture = ExtResource( 10 )
+
+[node name="num7" type="StaticBody2D" parent="TileMap/num7"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.05067, -27.4113, -117.093 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num7/num7"]
+
+transform/pos = Vector2( -27.4113, -117.093 )
+transform/scale = Vector2( 1.02408, 1.05067 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num8" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 418.455, 545.969 )
+texture = ExtResource( 11 )
+
+[node name="num8" type="StaticBody2D" parent="TileMap/num8"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.05067, -29.4113, -116.093 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num8/num8"]
+
+transform/pos = Vector2( -29.4113, -116.093 )
+transform/scale = Vector2( 1.02408, 1.05067 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="num9" type="Sprite" parent="TileMap"]
+
+editor/display_folded = true
+transform/pos = Vector2( 158.455, 415.969 )
+texture = ExtResource( 12 )
+
+[node name="num9" type="StaticBody2D" parent="TileMap/num9"]
+
+transform/pos = Vector2( 27.2075, 116.992 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.02408, 0, 0, 1.05067, -25.4113, -116.093 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/num9/num9"]
+
+transform/pos = Vector2( -25.4113, -116.093 )
+transform/scale = Vector2( 1.02408, 1.05067 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="taxi" parent="." instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 351.739, 246.356 )
+
+[node name="client" type="Node2D" parent="."]
+
+[node name="passenger" parent="client" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 187.994, 213.944 )
+
+[node name="passenger1" parent="client" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -47.006, 190.944 )
+
+
